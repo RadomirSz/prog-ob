@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace _19._09
 {
@@ -12,10 +11,10 @@ namespace _19._09
              wielo
             liniowy komentarz
              */
-            Console.WriteLine("cześć");
-            Console.Write("bu: ");
-            Console.Write("cześć");
-            Console.Clear();
+            System.Console.WriteLine("cześć");
+            System.Console.Write("bu: ");
+            System.Console.Write("cześć");
+            System.Console.Clear();
 
 
             /*
@@ -48,12 +47,12 @@ namespace _19._09
             short c = -20000;
                         
 
-            int i3 = 10;            //to
-            int32 i3 = 10;          //to
-            System.Int32 i3 = 10;   //samo
+            //int i3 = 10;            to
+            //Int32 i3 = 10;          to
+            //System.Int32 i3 = 10;   samo
 
             long l = -10l;    // suffix L
-            ulong l1 = 10ul;  //suffix UL
+            ulong ul = 10ul;  //suffix UL
             System.Console.WriteLine($"zmienna l: {l}, zmienna ul: {ul}");
 
             float f = 10.5F;  //suffix F
@@ -72,10 +71,17 @@ namespace _19._09
             //heksadecymalny
             System.Console.WriteLine(0xA1);
 
-            System.Console.OutputEncoding = System.Text.Encoding.UTF8;
-            System.Console.WriteLine("♥");
-            System.Console.WriteLine("\u2665");
-            System.Console.OutputEncoding = System.Text.Encoding.Default;
+            // System.Console.OutputEncoding = System.Text.Encoding.UTF8;
+            // System.Console.WriteLine("♥");
+            // System.Console.WriteLine("\u2665");
+            // System.Console.OutputEncoding = System.Text.Encoding.Default;
+
+            char letter = 'a';
+            System.Console.WriteLine(letter);
+            char letter2 = (char)97;
+            System.Console.WriteLine(letter2);
+            
+
 
 
             Console.ReadKey();
