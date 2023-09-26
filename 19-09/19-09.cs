@@ -47,9 +47,9 @@ namespace _19._09
             short c = -20000;
                         
 
-            //int i3 = 10;            to
-            //Int32 i3 = 10;          to
-            //System.Int32 i3 = 10;   samo
+            int i3 = 10;            //to
+            Int32 i4 = 10;          //to
+            System.Int32 i5 = 10;   //samo
 
             long l = -10l;    // suffix L
             ulong ul = 10ul;  //suffix UL
@@ -71,10 +71,10 @@ namespace _19._09
             //heksadecymalny
             System.Console.WriteLine(0xA1);
 
-            // System.Console.OutputEncoding = System.Text.Encoding.UTF8;
-            // System.Console.WriteLine("♥");
-            // System.Console.WriteLine("\u2665");
-            // System.Console.OutputEncoding = System.Text.Encoding.Default;
+            System.Console.OutputEncoding = System.Text.Encoding.UTF8;
+            System.Console.WriteLine("♥");
+            System.Console.WriteLine("\u2665");
+            System.Console.OutputEncoding = System.Text.Encoding.Default;
 
             char letter = 'a';
             System.Console.WriteLine(letter);
@@ -82,7 +82,8 @@ namespace _19._09
             System.Console.WriteLine(letter2);
             
 
-
+            System.Console.WriteLine("\x03c0"+"r"+"\x00B2");
+            System.Console.WriteLine("πr²");
 
             Console.ReadKey();
 
