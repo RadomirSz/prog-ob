@@ -43,7 +43,7 @@ namespace _2_project_2
        * decimal (128 bitów)
        * 
       */
-
+      
       int i; // deklaracja zmiennej i
       int i1 = 10; //deklaracja z jednoczesną inicjalizacją zmiennej i 
 
