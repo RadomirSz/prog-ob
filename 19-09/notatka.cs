@@ -88,17 +88,17 @@ namespace _2_project_2
       Console.WriteLine("decimal:" +sbyte.MinValue); //-128
       Console.WriteLine("decimal:" +sbyte.MaxValue); //127
 
-      Console.WriteLine("decimal:" +int.MinValue); //-2147483648
-      Console.WriteLine("decimal:" +Int32.MinValue); //-2147483648
-      Console.WriteLine("decimal:" +System.Int32.MinValue); //-2147483648
+      Console.WriteLine("int:" +int.MinValue); //-2147483648
+      Console.WriteLine("int32:" +Int32.MinValue); //-2147483648
+      Console.WriteLine("int32:" +System.Int32.MinValue); //-2147483648
 
       Console.WriteLine("long:" +long.MinValue); //-9223372036854775808
       Console.WriteLine("long:" +long.MaxValue); //9223372036854775807
 
       //Console.WriteLine(Int128.MaxValue); //brak typu Int128 w .net 8, istniał do .net 7
 
-      Console.WriteLine("decimal:" +float.MinValue); //-3,402823E+38
-      Console.WriteLine("decimal:" +float.MaxValue); //3,402823E+38
+      Console.WriteLine("float:" +float.MinValue); //-3,402823E+38
+      Console.WriteLine("float:" +float.MaxValue); //3,402823E+38
 
       Console.WriteLine("double:" +double.MinValue); //-1,79769313486232E+308
       Console.WriteLine("double:" +double.MaxValue); //1,79769313486232E+308
