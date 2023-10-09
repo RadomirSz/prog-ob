@@ -43,7 +43,7 @@ namespace _2_project_2
        * decimal (128 bitów)
        * 
       */
-      
+
       int i; // deklaracja zmiennej i
       int i1 = 10; //deklaracja z jednoczesną inicjalizacją zmiennej i 
 
@@ -82,15 +82,15 @@ namespace _2_project_2
       Console.WriteLine(0xA1); //161(10) => Ax16^1 + 1x16^0 = 10x16 + 1x1 = 160 + 1 = 161(10)
 
       //zakres typów danych
-      Console.WriteLine("decimal:" +byte.MinValue); //0
-      Console.WriteLine("decimal:" +byte.MaxValue); //255
+      Console.WriteLine("byte:" +byte.MinValue); //0
+      Console.WriteLine("byte:" +byte.MaxValue); //255
 
-      Console.WriteLine("decimal:" +sbyte.MinValue); //-128
-      Console.WriteLine("decimal:" +sbyte.MaxValue); //127
+      Console.WriteLine("sbyte:" +sbyte.MinValue); //-128
+      Console.WriteLine("sbyte:" +sbyte.MaxValue); //127
 
       Console.WriteLine("int:" +int.MinValue); //-2147483648
-      Console.WriteLine("int32:" +Int32.MinValue); //-2147483648
-      Console.WriteLine("int32:" +System.Int32.MinValue); //-2147483648
+      Console.WriteLine("int:" +Int32.MinValue); //-2147483648
+      Console.WriteLine("int:" +System.Int32.MinValue); //-2147483648
 
       Console.WriteLine("long:" +long.MinValue); //-9223372036854775808
       Console.WriteLine("long:" +long.MaxValue); //9223372036854775807
