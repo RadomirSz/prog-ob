@@ -36,7 +36,7 @@ class Program
         }
         catch(Exception ex)
         {
-            ErrorColorChange("błąd:{ex.Message}");
+            ErrorColorChange($"błąd:{ex.Message}");
         }
 
 
