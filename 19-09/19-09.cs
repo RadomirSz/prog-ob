@@ -51,7 +51,7 @@ namespace _19._09
             Int32 i4 = 10;          //to
             System.Int32 i5 = 10;   //samo
 
-            long l = -10l;    // suffix L
+            long l = -10L;    // suffix L
             ulong ul = 10ul;  //suffix UL
             System.Console.WriteLine($"zmienna l: {l}, zmienna ul: {ul}");
 
