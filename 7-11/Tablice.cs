@@ -88,7 +88,7 @@ class Program
             {
                 return number;
             }
-            System.Console.WriteLine("niepoprawna liczba");
+            System.Console.WriteLine("Niepoprawna liczba!");
         }
     }
     static int CalculateSum(int[] Table)
