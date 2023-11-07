@@ -80,10 +80,9 @@ class Program
     }
     static int GetIntegerFromUser()
     {
+        System.Console.WriteLine("daj liczbę całkowitą");
         while(true)
         {
-            System.Console.WriteLine("daj liczbę całkowitą");
-            string input = Console.ReadLine();
             if(int.TryParse(Console.ReadLine(), out int number))
             {
                 return number;
