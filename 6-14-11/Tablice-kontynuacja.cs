@@ -7,7 +7,7 @@ class Program
         // string[] name = {"Adam","Bartosz","Cezary","Damian","Kacper"};
         // foreach (string i in name) System.Console.Write(i + " ");
         // System.Console.WriteLine();
-        // System.Console.WriteLine(name[2]);
+        // System.Console.WriteLine(name[2]);3
         // System.Console.WriteLine(name[4]);
         int dlugosc;
         while(true)
