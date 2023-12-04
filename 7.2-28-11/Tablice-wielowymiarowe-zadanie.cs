@@ -106,3 +106,76 @@ class Program
     }
     #endregion
 }
+
+
+
+grupa 1
+Napisz program, który:
+
+Definiuje funkcję UtworzTabliceLiczb(int n), która przyjmuje jako parametr liczbę całkowitą n i zwraca tablicę jednowymiarową o długości n, wypełnioną liczbami z zakresu od 1 do 10, które podaje użytkownik z klawiatury
+Definiuje funkcję ObliczPole(int a), która przyjmuje jako parametr liczbę całkowitą a i zwraca wartość pola kwadratu o boku a. Wzór na pole kwadratu to:
+P=a2
+
+Definiuje funkcję ObliczObwod(int a), która przyjmuje jako parametr liczbę całkowitą a i zwraca wartość obwodu kwadratu o boku a. Wzór na obwód kwadratu to:
+O=4a
+
+W funkcji Main:
+Deklaruje zmienną n i przypisuje jej wartość 5.
+Wywołuje funkcję UtworzTabliceLiczb(n) i przypisuje jej wynik do zmiennej tablica.
+Wyświetla na ekranie zawartość tablicy tablica.
+Dla każdego elementu tablicy tablica:
+Wywołuje funkcję ObliczPole i przypisuje jej wynik do zmiennej pole.
+Wywołuje funkcję ObliczObwod i przypisuje jej wynik do zmiennej obwod.
+Wyświetla na ekranie informację o polu i obwodzie kwadratu o boku równym danemu elementowi tablicy.
+Napisz funkcję, która umożliwia podanie w parametrze indeksu tablicy a następnie zwróci ona wynik pola i obwodu kwadratu
+
+https://drive.google.com/drive/folders/1iIAKNdDHyyc1lk41IHYXw6kSbIhS5zFd?usp=sharing
+
+
+
+
+
+#########################################################################################################
+namespace csharp;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int a = GetIntFromUser();
+        int[] A = UtworzTabliceLiczb(a);
+        displayarr(A);
+    }
+    static int[] UtworzTabliceLiczb(int n)
+    {
+        int[] T = new int[n];
+
+        for(int i = 0 ; i < n ; i++)
+        {
+            T[i] = GetIntFromUser();
+        }
+        return T;
+    }
+    static int GetIntFromUser()
+    {
+        System.Console.WriteLine("daj liczbę całkowitą");
+        while(true)
+        {
+            if(int.TryParse(Console.ReadLine(), out int number) && number > 0 && number < 11)
+            {
+                return number;
+            }
+            System.Console.WriteLine("Niepoprawna liczba!");
+        }
+    }
+    static void displayarr(int[] T)
+    {
+        System.Console.WriteLine("twoja tablica: ");
+        foreach (int i in T) System.Console.WriteLine(i);
+    }
+    ststic int ObliczPole(int a)
+    {
+        a = a*a;
+        System.Console.WriteLine("pole kwadratu o boku a to: "+ a + "cm²");
+    }
+}
