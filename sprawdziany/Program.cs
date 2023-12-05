@@ -3,17 +3,20 @@ namespace sprawdziany;
 
 class Program
 {
+    static int n1 = 5;
+    static int[] pola = new int[n1];
+    static int[] obwody = new int[n1];
+    
     static void Main(string[] args)
     {
         //dopisz do każdej zmiennej "1"
-        int n1 = 5;
+        
         int[] tablica1 = UtworzTabliceLiczb(n1);
         wyswietlTAB(tablica1);
         
         System.Console.WriteLine();
         
-        int[] pola = new int[n1];
-        int[] obwody = new int[n1];
+       
 
         for (int i = 1; i < tablica1.GetLength(0)+1; i++)
         {
@@ -31,7 +34,7 @@ class Program
             System.Console.WriteLine("Obwód kwadratu utworzonego przy użyciu liczby " + i + " z twojej tablicy to: " + x + "cm");
         }
 
-       
+        pokazelement();
     }
 
     static int dajcyfre()
@@ -65,14 +68,20 @@ class Program
     static void pokazelement()
     {
         System.Console.WriteLine("jaki element chcesz zobaczyć?");
-        int n;
+        int n11 = 0;
         System.Console.WriteLine("Podaj liczbę z zakresu 1-5:");
-        while(true)
+        while(n11==0)
         {
-            if(int.TryParse(Console.ReadLine(), out int cyfra1) && cyfra1 > 0 && cyfra1 < 6) n = cyfra1;
-            System.Console.WriteLine("Nieprawidłowa liczba");
+            if(int.TryParse(Console.ReadLine(), out int cyfra1) && cyfra1 > 0 && cyfra1 < 6) 
+            {
+                n11 = cyfra1;
+            }
+            else
+            {
+                System.Console.WriteLine("Nieprawidłowa liczba");
+            }
         }
-        System.Console.WriteLine("Pole kwadratu utworzonego przy użyciu liczby " + n + " z twojej tablicy to: " + pola[n] + "cm\u00B2");
-        System.Console.WriteLine("Obwód kwadratu utworzonego przy użyciu liczby " + n + " z twojej tablicy to: " + obwody[n] + "cm");
+        System.Console.WriteLine("Pole kwadratu utworzonego przy użyciu liczby " + n1 + " z twojej tablicy to: " + pola[n11-1] + "cm \u00B2");
+        System.Console.WriteLine("Obwód kwadratu utworzonego przy użyciu liczby " + n1 + " z twojej tablicy to: " + obwody[n11-1] + "cm");
     }
 }
