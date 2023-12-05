@@ -90,6 +90,7 @@ class Program
 
         #endregion
     }
+    #region funkcje
     static List<int> podmien(List<int> L)
     {
         List<int> L2 = new List<int>();
@@ -103,4 +104,5 @@ class Program
             System.Console.WriteLine(i);
         }
     }
+    #endregion
 }
